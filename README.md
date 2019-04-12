@@ -11,8 +11,8 @@ These solutions are provided for inspiration and we encourage customers to use t
 
 This is a moving project (no API maintenance, no deprecation process, etc.) If any of these solutions are found to be useful for the Nuxeo Platform in general, they will be integrated directly into platform, not maintained here.
 
-## How to build
-Building requires the following software:
+## Run
+Tthe following software are required
 - git
 - node
 - npm
@@ -20,10 +20,7 @@ Building requires the following software:
 ```
 git clone https://github.com/nuxeo-sandbox/home-loan-processing-demo-data-generator
 cd home-loan-processing-demo-data-generator
-```
-
-## Run
-```
+npm install
 node index.js --locale="ja" --number=1000
 ```
 
