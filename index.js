@@ -7,6 +7,7 @@ const commandLineArgs = require('command-line-args');
 const optionDefinitions = [
   { name: 'locale', type: String, defaultValue: "en_US" },
   { name: 'number', type: String, defaultValue: 100  }
+  { name: 'output', type: String, defaultValue: "output.csv"  },
 ]
 
 const options = commandLineArgs(optionDefinitions);
@@ -67,7 +68,7 @@ for (let i = 0; i < options.number; i++) {
 
 //console.log(records);
 
-const ws = fs.createWriteStream("out.csv");
+const ws = fs.createWriteStream(options.output);
 fastcsv
   .write(records, {
     headers: true,
