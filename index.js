@@ -16,10 +16,13 @@ faker.locale = options.locale;
 
 const records = [];
 
-for (let i = 0; i < options.number; i++) {
+var start = new Date().getTime() % 1000000000;
+var end = start + options.number;
+
+for (let i = start; i < end; i++) {
   records.push({
     "type": "Application",
-    "name": "AP"+faker.random.number(),
+    "name": "AP"+i,
     "dc:created": faker.date.past(0.3).toISOString(),
     "applicant:firstname": faker.name.firstName(),
     "applicant:lastname": faker.name.lastName(),
