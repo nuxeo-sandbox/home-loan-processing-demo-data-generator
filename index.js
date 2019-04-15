@@ -24,6 +24,7 @@ for (let i = start; i < end; i++) {
     "type": "Application",
     "name": "AP"+i,
     "dc:created": faker.date.past(0.3).toISOString(),
+    "dc:creator": "Administrator",
     "applicant:firstname": faker.name.firstName(),
     "applicant:lastname": faker.name.lastName(),
     "applicant:gender": faker.random.arrayElement(["man","woman"]),
