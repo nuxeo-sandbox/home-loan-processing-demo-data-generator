@@ -6,7 +6,7 @@ const commandLineArgs = require('command-line-args');
 
 const optionDefinitions = [
   { name: 'locale', type: String, defaultValue: "en_US" },
-  { name: 'number', type: String, defaultValue: 100  }
+  { name: 'number', type: Number, defaultValue: 100  },
   { name: 'output', type: String, defaultValue: "output.csv"  },
 ]
 
