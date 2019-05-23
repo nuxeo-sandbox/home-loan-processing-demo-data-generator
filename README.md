@@ -1,5 +1,5 @@
 ## Description
-This repository contains a node scripts to generate data for the home loan application processing demo built.
+This repository contains a node scripts to generate data for the home loan application processing demo.
 
 Random data are generated with [faker.js](https://github.com/marak/Faker.js/).
 
