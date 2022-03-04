@@ -2,6 +2,7 @@
   "name": "loan-processing-demo-data-generator",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +12,10 @@
   "dependencies": {
     "command-line-args": "^5.1.1",
     "csv-writer": "^1.2.0",
-    "faker": "^4.1.0",
-    "fast-csv": "^2.4.1",
+    "fast-csv": "^ 4.3.6",
     "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7"
   }
 }
